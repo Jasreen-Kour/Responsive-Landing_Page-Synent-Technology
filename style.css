@@ -75,7 +75,6 @@ html {
     transform: scale(1.05);
 }
 
-/* Features */
 .features {
     padding: 50px 20px;
     text-align: center;
@@ -95,7 +94,15 @@ html {
     width: 250px;
 }
 
-/* Contact */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
 .contact {
     padding: 50px 20px;
     text-align: center;
@@ -141,7 +148,6 @@ html {
     background: #007b80;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -149,7 +155,6 @@ footer {
     color: white;
 }
 
-/* Responsive */
 @media(max-width: 768px) {
     .feature-container {
         flex-direction: column;
